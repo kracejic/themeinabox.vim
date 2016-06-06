@@ -112,7 +112,8 @@ hi Keyword                   guifg=#e09146 gui=NONE ctermfg=173 cterm=NONE
 hi Number                    guifg=#78add2 ctermfg=110
 hi Statement                 guifg=#e09146 gui=NONE ctermfg=173 cterm=NONE
 hi String                    guifg=#78add2 ctermfg=110
-hi Title                     guifg=#FFFFFF ctermfg=15
+"hi Title                     guifg=#FFFFFF ctermfg=15
+hi! link Title Statement
 hi Type                      guifg=#e0a743 gui=NONE ctermfg=179 cterm=NONE
 hi PreProc                   guifg=#ff8700 ctermfg=208
 hi Special                   guifg=#afd75f ctermfg=149
@@ -124,6 +125,18 @@ hi cParen                   guifg=#afd75f ctermfg=149
 "hi cppSTLnamespace          guifg=#a6e043 gui=NONE ctermfg=149 cterm=NONE
 hi! link cppSTLnamespace normal
 hi! link cppSTLconstant normal
+
+" VimWiki
+hi VimwikiHeaderChar guifg=#e09146 gui=bold ctermfg=173 cterm=bold
+hi! link VimwikiHeader1 VimwikiHeaderChar
+hi! link VimwikiHeader2 VimwikiHeaderChar
+hi! link VimwikiHeader3 VimwikiHeaderChar
+hi! link VimwikiHeader4 VimwikiHeaderChar
+hi! link VimwikiHeader5 VimwikiHeaderChar
+hi VimwikiBold guifg=#ffffff ctermfg=231 cterm=bold
+hi VimWikiCode guifg=#d787d7 ctermfg=176
+hi VimWikiPre guifg=#dfafdf ctermfg=182
+hi VimwikiCellSeparator guifg=#5f5f5f ctermfg=59
 
 " Diffs
 " -----
