@@ -127,16 +127,17 @@ hi! link cppSTLnamespace normal
 hi! link cppSTLconstant normal
 
 " VimWiki
-hi VimwikiHeaderChar guifg=#e09146 gui=bold ctermfg=173 cterm=bold
-hi! link VimwikiHeader1 VimwikiHeaderChar
-hi! link VimwikiHeader2 VimwikiHeaderChar
-hi! link VimwikiHeader3 VimwikiHeaderChar
-hi! link VimwikiHeader4 VimwikiHeaderChar
-hi! link VimwikiHeader5 VimwikiHeaderChar
+hi VimwikiHeaderChar guifg=#e09146 gui=bold ctermfg=173 cterm=NONE
+hi VimwikiHeader1 guifg=#ff8700 gui=bold ctermfg=208 cterm=bold
+hi VimwikiHeader2 guifg=#d75f00 gui=bold ctermfg=166 cterm=bold
+hi VimwikiHeader3 guifg=#af5f00 gui=bold ctermfg=130 cterm=bold
+hi VimwikiHeader4 guifg=#875f00 gui=bold ctermfg=94 cterm=bold
+hi VimwikiHeader5 guifg=#875f00 gui=NONE ctermfg=94 cterm=NONE
 hi VimwikiBold guifg=#ffffff ctermfg=231 cterm=bold
 hi VimWikiCode guifg=#d787d7 ctermfg=176
 hi VimWikiPre guifg=#dfafdf ctermfg=182
 hi VimwikiCellSeparator guifg=#5f5f5f ctermfg=59
+hi VimwikiHR guifg=#5f5f5f gui=bold ctermfg=240 cterm=bold
 
 " Diffs
 " -----
