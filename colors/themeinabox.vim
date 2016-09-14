@@ -141,6 +141,14 @@ hi VimwikiHR guifg=#5f5f5f gui=bold ctermfg=240 cterm=bold
 hi VimwikiLink guifg=#5f5fff gui=underline ctermfg=45 cterm=underline
 hi VimwikiListTodo guifg=#87af00 gui=NONE ctermfg=106 cterm=NONE
 
+hi! link htmlH1 VimwikiHeader1
+hi! link htmlH2 VimwikiHeader2
+hi! link htmlH3 VimwikiHeader3
+hi! link htmlH4 VimwikiHeader4
+hi! link htmlH5 VimwikiHeader5
+hi! link htmlItalic VimwikiBold
+hi! link mkdCode VimwikiCode
+
 " Diffs
 " -----
 hi DiffAdd                   guifg=#e4e4e4 guibg=#519F50 ctermfg=254 ctermbg=22
