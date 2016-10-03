@@ -26,12 +26,16 @@ function! CSyntaxAfter()
     syntax match _OperatorComparison ">="
     syntax region _Comment start="\/\*" end="\*\/"
     syntax match _Comment "\/\/.*$"
+    syntax match _Define "#define"
+    syntax match _DefineArg "#define\s*\S*" contains=_Define
 
     hi _Block guifg=yellow1 guibg=NONE gui=none
     hi link _Bracket Constant
     hi link _Operator Operator
     hi link _OperatorComparison OperatorComparison
     hi link _Comment Comment
+    hi link _Define cIncluded
+    hi link _DefineArg Identifier
 endfunction
 
 autocmd! FileType c,cpp,java,php call CSyntaxAfter()
@@ -125,6 +129,8 @@ hi cParen                   guifg=#afd75f ctermfg=149
 "hi cppSTLnamespace          guifg=#a6e043 gui=NONE ctermfg=149 cterm=NONE
 hi! link cppSTLnamespace normal
 hi! link cppSTLconstant normal
+hi! link cPreCondit cIncluded
+hi! link cDefine cIncluded
 
 " VimWiki
 hi VimwikiHeaderChar guifg=#e09146 gui=bold ctermfg=173 cterm=NONE
