@@ -44,11 +44,11 @@ autocmd! FileType c,cpp,java,php call CSyntaxAfter()
 hi Operator                  guifg=#e88958 ctermfg=173
 hi OperatorComparison        guifg=#e86524 ctermfg=166
 
-hi Normal                    guifg=#121212 guibg=#ffffff ctermfg=233 ctermbg=15
+hi Normal                    guifg=#262626 guibg=#ffffff ctermfg=235 ctermbg=231
 hi Search                    guifg=#000000 guibg=#c6c6c6 ctermfg=0 ctermbg=251 cterm=NONE
 hi Visual                    guibg=#ffdf87 ctermbg=222
 hi LineNr                    guifg=#666666 ctermfg=242
-hi Cursor                    guifg=#000000 guibg=#FFFFFF ctermfg=0 ctermbg=15
+hi Cursor                    guifg=#1c1c1c guibg=#c6c6c6 ctermfg=234 ctermbg=251
 hi CursorLine                guibg=#ffffdf gui=NONE ctermbg=230 cterm=NONE
 hi CursorLineNr              guifg=#080808 gui=NONE ctermfg=232 cterm=NONE
 hi ColorColumn               guibg=#1c1c1c ctermbg=234
@@ -111,14 +111,14 @@ hi Todo                      guifg=#df5f5f guibg=NONE gui=bold ctermfg=167 cterm
 hi Constant                  guifg=#d75faf ctermfg=169
 hi Error                     guifg=#FFFFFF guibg=#990000 ctermfg=221 ctermbg=88
 hi WarningMsg                guifg=#800000 guibg=NONE ctermfg=1 ctermbg=NONE
-hi Identifier                guifg=#a6e043 gui=NONE ctermfg=149 cterm=NONE
+hi Identifier                guifg=#afaf00 gui=NONE ctermfg=142 cterm=NONE
 hi Keyword                   guifg=#e09146 gui=NONE ctermfg=173 cterm=NONE
-hi Number                    guifg=#78add2 ctermfg=110
-hi Statement                 guifg=#e09146 gui=NONE ctermfg=173 cterm=NONE
-hi String                    guifg=#78add2 ctermfg=110
+hi Number                    guifg=#875fd7 ctermfg=98
+hi Statement                 guifg=#d78700 gui=NONE ctermfg=172 cterm=NONE
+hi String                    guifg=#8787ff ctermfg=105
 "hi Title                     guifg=#FFFFFF ctermfg=15
 hi! link Title Statement
-hi Type                      guifg=#e0a743 gui=NONE ctermfg=179 cterm=NONE
+hi Type                      guifg=#dfaf00 gui=NONE ctermfg=178 cterm=NONE
 hi PreProc                   guifg=#ff8700 ctermfg=208
 hi Special                   guifg=#afd75f ctermfg=149
 hi cParen                   guifg=#afd75f ctermfg=149
@@ -157,10 +157,10 @@ hi! link mkdCode VimwikiCode
 
 " Diffs
 " -----
-hi DiffAdd                   guifg=#e4e4e4 guibg=#519F50 ctermfg=254 ctermbg=22
-hi DiffDelete                guifg=#000000 guibg=#660000 gui=bold ctermfg=16 ctermbg=52 cterm=bold
-hi DiffChange                guifg=#FFFFFF guibg=#870087 ctermfg=15 ctermbg=90
-hi DiffText                  guifg=#FFFFFF guibg=#FF0000 gui=bold ctermfg=15 ctermbg=9 cterm=bold
+hi DiffAdd                   guifg=#1c1c1c guibg=#afff87 ctermfg=234 ctermbg=156
+hi DiffDelete                guifg=#303030 guibg=#ffaf5f ctermfg=236 ctermbg=215
+hi DiffChange                guibg=#ffffff ctermbg=15
+hi DiffText                  guifg=#1c1c1c guibg=#ff87ff gui=bold ctermfg=234 ctermbg=213 cterm=bold
 
 hi diffAdded                 guifg=#008700 ctermfg=28
 hi diffRemoved               guifg=#800000 ctermfg=1
