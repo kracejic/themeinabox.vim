@@ -23,9 +23,9 @@ function! CSyntaxAfter()
     syntax match Normal "->"
     syntax match _OperatorComparison "=="
     syntax match _OperatorComparison "<="
-    syntax match _OperatorComparison ">="
-    syntax region _Comment start="\/\*" end="\*\/"
-    syntax match _Comment "\/\/.*$"
+    syntax match _Todo "\<\(todo\|TODO\)\>"
+    syntax region _Comment start="\/\*" end="\*\/" contains=_Todo
+    syntax match _Comment "\/\/.*$" contains=_Todo
     syntax match _Define "#define"
     syntax match _DefineArg "#define\s*\S*" contains=_Define
 
@@ -36,6 +36,7 @@ function! CSyntaxAfter()
     hi link _Comment Comment
     hi link _Define cIncluded
     hi link _DefineArg Identifier
+    hi! link _Todo Todo
 endfunction
 
 autocmd! FileType c,cpp,java,php call CSyntaxAfter()
