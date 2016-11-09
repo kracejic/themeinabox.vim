@@ -28,6 +28,12 @@ function! CSyntaxAfter()
     syntax match _Comment "\/\/.*$" contains=_Todo
     syntax match _Define "#define"
     syntax match _DefineArg "#define\s*\S*" contains=_Define
+    syn match  cUserCont   "^\s*\I\i*\s*:$" contains=cUserLabel,_Default
+    syn match cUserCont   ";\s*\I\i*\s*:$" contains=cUserLabel,_Default
+    syn match  cUserCont   "^\s*\I\i*\s*:[^:]" contains=cUserLabel,_Default
+    syn match cUserCont   ";\s*\I\i*\s*:[^:]" contains=cUserLabel,_Default
+    syn match  cUserLabel  "\I\i*" contained
+    syn match _Default "default"
 
     hi _Block guifg=yellow1 guibg=NONE gui=none
     hi link _Bracket Constant
@@ -36,6 +42,7 @@ function! CSyntaxAfter()
     hi link _Comment Comment
     hi link _Define cIncluded
     hi link _DefineArg Identifier
+    hi! link _Default Statement
     hi! link _Todo Todo
 endfunction
 
@@ -132,6 +139,7 @@ hi! link cppSTLnamespace normal
 hi! link cppSTLconstant normal
 hi! link cPreCondit cIncluded
 hi! link cDefine cIncluded
+hi! link cUserLabel cIncluded
 
 " VimWiki
 hi VimwikiHeaderChar guifg=#e09146 gui=bold ctermfg=173 cterm=NONE

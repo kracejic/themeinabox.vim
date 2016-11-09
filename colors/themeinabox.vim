@@ -14,7 +14,7 @@ let g:colors_name = "themeinabox"
 
 function! CSyntaxAfter()
     syntax keyword Boolean true false NULL TRUE FALSE
-    syntax keyword Statement namespace stderr stdin stdout new this delete
+    syntax keyword Statement namespace stderr stdin stdout new this delete default
 
     syntax match _Block "[{}]"
     syntax match _Bracket "[\[\]]"
@@ -29,6 +29,12 @@ function! CSyntaxAfter()
     syntax match _Comment "\/\/.*$"  contains=_Todo
     syntax match _Define "#define"
     syntax match _DefineArg "#define\s*\S*" contains=_Define
+    syn match  cUserCont   "^\s*\I\i*\s*:$" contains=cUserLabel,_Default
+    syn match cUserCont   ";\s*\I\i*\s*:$" contains=cUserLabel,_Default
+    syn match  cUserCont   "^\s*\I\i*\s*:[^:]" contains=cUserLabel,_Default
+    syn match cUserCont   ";\s*\I\i*\s*:[^:]" contains=cUserLabel,_Default
+    syn match  cUserLabel  "\I\i*" contained
+    syn match _Default "default"
 
     hi _Block guifg=yellow1 guibg=NONE gui=none
     hi link _Bracket Constant
@@ -37,6 +43,7 @@ function! CSyntaxAfter()
     hi link _Comment Comment
     hi link _Define cIncluded
     hi link _DefineArg Identifier
+    hi! link _Default Statement
     hi! link _Todo Todo
     " hi! link _Comment_bold VimwikiBold
 endfunction
@@ -134,6 +141,8 @@ hi! link cppSTLnamespace normal
 hi! link cppSTLconstant normal
 hi! link cPreCondit cIncluded
 hi! link cDefine cIncluded
+
+hi! link cUserLabel cIncluded
 
 " VimWiki
 hi VimwikiHeaderChar guifg=#e09146 gui=bold ctermfg=173 cterm=NONE
