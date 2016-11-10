@@ -23,7 +23,7 @@ function! CSyntaxAfter()
     syntax match Normal "->"
     syntax match _OperatorComparison "=="
     syntax match _OperatorComparison "<="
-    syntax match _Todo "\<\(todo\|TODO\)\>"
+    syntax match _Todo "\<\(todo\|TODO\)\>" contained
     " syntax region _Comment_bold start="\*\S" end="\S\*"
     syntax region _Comment start="\/\*" end="\*\/" contains=_Todo
     syntax match _Comment "\/\/.*$"  contains=_Todo
