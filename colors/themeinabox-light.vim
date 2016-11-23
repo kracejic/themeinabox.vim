@@ -14,7 +14,7 @@ let g:colors_name = "themeinabox-light"
 
 function! CSyntaxAfter()
     syntax keyword Boolean true false NULL TRUE FALSE
-    syntax keyword Statement namespace stderr stdin stdout new this delete
+    syntax keyword Statement namespace stderr stdin stdout new this delete default not or and xor nullptr override final
 
     syntax match _Block "[{}]"
     syntax match _Bracket "[\[\]]"
