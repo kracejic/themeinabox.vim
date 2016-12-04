@@ -20,7 +20,7 @@ function! CSyntaxAfter()
     syntax match _Bracket "[\[\]]"
     syntax match _OperatorComparison "[<>=!]"
     syntax match _Operator "[-+&|=\/~.,;:*%&^?]"
-    syntax match Normal "->"
+    syntax match _Operator "->"
     syntax match _OperatorComparison "=="
     syntax match _OperatorComparison "<="
     syntax match _Todo "\<\(todo\|TODO\)\>" contained
@@ -140,6 +140,31 @@ hi! link cppSTLconstant normal
 hi! link cPreCondit cIncluded
 hi! link cDefine cIncluded
 hi! link cUserLabel cIncluded
+
+" Syntastic
+
+hi! SyntasticErrorSign guifg=#d70000 gui=NONE ctermfg=160 cterm=bold
+hi! SyntasticErrorLine ctermbg=NONE
+hi! SyntasticError ctermbg=NONE
+hi! SyntasticWarningSign guifg=#d787d7 gui=NONE ctermfg=176 cterm=NONE
+" hi! SyntasticWarningLine ctermfg=92 cterm=NONE
+hi! link YcmErrorSign SyntasticErrorSign
+hi! link YcmErrorLine SyntasticErrorLine
+hi! link YcmErrorSection SyntasticError
+hi! link YcmWarningSign SyntasticWarningSign
+" hi! link YcmWarningLine SyntasticWarningLine
+
+" Build output
+hi! build_error guifg=#d70000 gui=bold ctermfg=160 cterm=bold
+hi! build_warning guifg=#d787d7 gui=bold ctermfg=176 cterm=bold
+hi! build_note guifg=#4e4e4e gui=bold ctermfg=239 cterm=bold
+hi! build_file guifg=#767676 gui=none ctermfg=243 cterm=none
+
+hi! build_building guifg=#5fd700 gui=none ctermfg=76 cterm=none
+hi! build_built guifg=#6c6c6c gui=none ctermfg=242 cterm=none
+hi! build_linking guifg=#5fd700 gui=bold ctermfg=76 cterm=bold
+hi! build_buildLine guifg=#5fafd7 gui=none ctermfg=74 cterm=none
+hi! build_success guifg=#5fd700 gui=bold ctermfg=76 cterm=bold
 
 " VimWiki
 hi VimwikiHeaderChar guifg=#e09146 gui=bold ctermfg=173 cterm=NONE
