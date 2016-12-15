@@ -23,6 +23,8 @@ syntax match build_passed "All tests passed"
 syntax match build_passed "^100% tests passed, 0 tests failed"
 syntax match build_error "^[0-9][0-9]% tests passed"
 
+syntax match build_warning "Create package using.*$"
+syntax match build_note "^CPack:"
 
 hi link build_make Function
 hi link build_passed build_success
