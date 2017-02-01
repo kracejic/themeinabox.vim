@@ -173,6 +173,7 @@ hi VimwikiHeader2 guifg=#d75f00 gui=bold ctermfg=166 cterm=bold
 hi VimwikiHeader3 guifg=#af5f00 gui=bold ctermfg=130 cterm=bold
 hi VimwikiHeader4 guifg=#875f00 gui=bold ctermfg=94 cterm=bold
 hi VimwikiHeader5 guifg=#875f00 gui=NONE ctermfg=94 cterm=NONE
+hi VimwikiHeader6 guifg=#870000 gui=NONE ctermfg=58 cterm=NONE
 hi VimwikiBold guifg=#5f0087 ctermfg=54 cterm=bold
 hi VimWikiCode guifg=#af005f ctermfg=125
 hi VimWikiPre guifg=#af0087 ctermfg=126
