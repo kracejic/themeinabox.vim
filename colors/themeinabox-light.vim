@@ -23,9 +23,12 @@ function! CSyntaxAfter()
     syntax match _Operator "->"
     syntax match _OperatorComparison "=="
     syntax match _OperatorComparison "<="
-    syntax match _Todo "\<\(todo\|TODO\)\>" contained
-    syntax region _Comment start="\/\*" end="\*\/" contains=_Todo
-    syntax match _Comment "\/\/.*$" contains=_Todo
+    syntax match _Todo "\<\(todo\|TODO\|fix\|FIX\|FIXME\)\>" contained
+    syntax match _Note "\<NOTE\>" contained
+    syntax match _Doc "@\<\(param\s*\S*\|return\|author\|version\|since\|throws\|exception\)\>" contained
+    " syntax region _Comment_bold start="\*\S" end="\S\*"
+    syntax region _Comment start="\/\*" end="\*\/" contains=_Todo,_Note,_Doc
+    syntax match _Comment "\/\/.*$"  contains=_Todo,_Note,_Doc
     syntax match _Define "#define"
     syntax match _DefineArg "#define\s*\S*" contains=_Define
     syn match  cUserCont   "^\s*\I\i*\s*:$" contains=cUserLabel,_Default
@@ -44,6 +47,9 @@ function! CSyntaxAfter()
     hi link _DefineArg Identifier
     hi! link _Default Statement
     hi! link _Todo Todo
+    hi! link _Note String
+    hi! link _Doc cIncluded
+    " hi! link _Comment_bold VimwikiBold
 endfunction
 
 autocmd! FileType c,cpp,java,php call CSyntaxAfter()
