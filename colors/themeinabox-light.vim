@@ -23,8 +23,8 @@ function! CSyntaxAfter()
     syntax match _Operator "->"
     syntax match _OperatorComparison "=="
     syntax match _OperatorComparison "<="
-    syntax match _Todo "\<\(todo\|TODO\|fix\|FIX\|FIXME\)\>" contained
-    syntax match _Note "\<NOTE\>" contained
+    syntax match _Todo "\<\(todo\|TODO\|FIX\|FIXME\)\>" contained
+    syntax match _Note "\<NOTE\|QUESTION\|OPEN\>" contained
     syntax match _Doc "@\<\(param\s*\S*\|return\|author\|version\|since\|throws\|exception\)\>" contained
     " syntax region _Comment_bold start="\*\S" end="\S\*"
     syntax region _Comment start="\/\*" end="\*\/" contains=_Todo,_Note,_Doc
