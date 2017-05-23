@@ -12,6 +12,15 @@ syntax reset
 set t_Co=256
 let g:colors_name = "themeinabox"
 
+" Ogre2.1+ preprocessor
+function! GlslSyntaxAfter()
+    syntax match cInclude "@\<end\>"
+    syntax match cIncluded "@\<\(property\|foreach\|end\|insertpiece\|piece\|value\)\>\s*([^)]*)" contains=_preprocessorglsls
+    syntax match _preprocessorglsls "@\<\(property\|foreach\|end\|insertpiece\|piece\|value\)\>" contained
+    hi link _preprocessorglsls cInclude
+endfunction
+autocmd! FileType glsl call GlslSyntaxAfter()
+
 function! CSyntaxAfter()
     syntax keyword Boolean true false NULL TRUE FALSE
     syntax keyword Statement namespace stderr stdin stdout new this delete default not or and xor nullptr override final
