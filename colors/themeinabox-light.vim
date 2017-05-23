@@ -21,17 +21,23 @@ function! GlslSyntaxAfter()
 endfunction
 autocmd! FileType glsl call GlslSyntaxAfter()
 
+" C++ syntax
 function! CSyntaxAfter()
     syntax keyword Boolean true false NULL TRUE FALSE
-    syntax keyword Statement namespace stderr stdin stdout new this delete default not or and xor nullptr override final
+    syntax keyword Statement namespace stderr stdin stdout new this delete default or and xor nullptr override final
+    syntax keyword Type Int8u Int8s Int16u Int16s Int32u Int32s Int64u Int64s
+    syntax keyword _OperatorComparison not
 
     syntax match _Block "[{}]"
     syntax match _Bracket "[\[\]]"
     syntax match _OperatorComparison "[<>=!]"
     syntax match _Operator "[-+&|=\/~.,;:*%&^?]"
     syntax match _Operator "->"
+    syntax match _OperatorComparison "not"
+    syntax match _OperatorComparison "!="
     syntax match _OperatorComparison "=="
     syntax match _OperatorComparison "<="
+    syntax match _OperatorComparison ">="
     syntax match _Todo "\<\(todo\|TODO\|FIX\|FIXME\)\>" contained
     syntax match _Note "\<NOTE\|QUESTION\|OPEN\>" contained
     syntax match _Doc "@\<\(param\s*\S*\|return\|author\|version\|since\|throws\|exception\)\>" contained
@@ -46,6 +52,8 @@ function! CSyntaxAfter()
     syn match cUserCont   ";\s*\I\i*\s*:[^:]" contains=cUserLabel,_Default
     syn match  cUserLabel  "\I\i*" contained
     syn match _Default "default"
+    syn match _Member "\<[a-z][A-Z][a-z_A-Z0-9]*\>"
+    syn match _Member "\<[a-z]_[a-z_A-Z0-9]*\>"
 
     hi _Block guifg=yellow1 guibg=NONE gui=none
     hi link _Bracket Constant
@@ -56,16 +64,15 @@ function! CSyntaxAfter()
     hi link _DefineArg Identifier
     hi! link _Default Statement
     hi! link _Todo Todo
+    hi! link _Member Member
     hi! link _Note String
     hi! link _Doc cIncluded
     " hi! link _Comment_bold VimwikiBold
 endfunction
 
+
 autocmd! FileType c,cpp,java,php call CSyntaxAfter()
 
-
-hi Operator                  guifg=#e88958 ctermfg=173
-hi OperatorComparison        guifg=#e86524 ctermfg=166
 
 hi Normal                    guifg=#262626 guibg=#ffffff ctermfg=235 ctermbg=231
 hi Search                    guifg=#000000 guibg=#c6c6c6 ctermfg=0 ctermbg=251 cterm=NONE
@@ -78,9 +85,6 @@ hi ColorColumn               guibg=#1c1c1c ctermbg=234
 hi! link CursorColumn ColorColumn
 hi VertSplit                 guifg=#444444 guibg=#bcbcbc gui=NONE ctermfg=238 ctermbg=250 cterm=NONE
 hi SignColumn                guifg=#FFFFFF guibg=NONE ctermfg=15 ctermbg=NONE
-
-hi cInclude                  guifg=#49515c ctermfg=239
-hi cIncluded                 guifg=#637285 ctermfg=60
 
 " StatusLine
 " Bold
@@ -130,7 +134,6 @@ hi PMenuThumb                guifg=#ffffff guibg=#a8a8a8 gui=NONE ctermfg=15 cte
 " ---------------
 hi Comment                   guifg=#7d7d7d ctermfg=244
 hi Todo                      guifg=#df5f5f guibg=NONE gui=bold ctermfg=167 ctermbg=NONE cterm=bold
-" hi Todo                      guifg=#000000 guibg=ffff00 gui=bold ctermfg=16 ctermbg=11 cterm=bold
 hi Constant                  guifg=#d75faf ctermfg=169
 hi Error                     guifg=#FFFFFF guibg=#990000 ctermfg=221 ctermbg=88
 hi WarningMsg                guifg=#800000 guibg=NONE ctermfg=1 ctermbg=NONE
@@ -155,6 +158,12 @@ hi! link cppSTLconstant normal
 hi! link cPreCondit cIncluded
 hi! link cDefine cIncluded
 hi! link cUserLabel cIncluded
+
+hi Operator                  guifg=#e88958 ctermfg=173
+hi OperatorComparison        guifg=#e86524 ctermfg=166
+hi cInclude                  guifg=#49515c ctermfg=239
+hi cIncluded                 guifg=#637285 ctermfg=60
+hi Member                  guifg=#d75f00 ctermfg=166
 
 " Syntastic
 
