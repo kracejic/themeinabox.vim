@@ -135,8 +135,9 @@ hi PMenuThumb                guifg=#ffffff guibg=#a8a8a8 gui=NONE ctermfg=15 cte
 hi Comment                   guifg=#7d7d7d ctermfg=244
 hi Todo                      guifg=#df5f5f guibg=NONE gui=bold ctermfg=167 ctermbg=NONE cterm=bold
 hi Constant                  guifg=#d75faf ctermfg=169
-hi Error                     guifg=#FFFFFF guibg=#990000 ctermfg=221 ctermbg=88
+hi Error                     guifg=#990000 guibg=NONE ctermfg=88 ctermbg=NONE
 hi WarningMsg                guifg=#800000 guibg=NONE ctermfg=1 ctermbg=NONE
+hi ErrorMsg                  guifg=#800000 guibg=NONE ctermfg=1 ctermbg=NONE
 hi Identifier                guifg=#afaf00 gui=NONE ctermfg=142 cterm=NONE
 hi Keyword                   guifg=#e09146 gui=NONE ctermfg=173 cterm=NONE
 hi Number                    guifg=#875fd7 ctermfg=98
