@@ -160,9 +160,9 @@ hi! link cDefine cIncluded
 hi! link cUserLabel cIncluded
 
 hi Operator                  guifg=#e88958 ctermfg=173
-hi OperatorComparison        guifg=#e86524 ctermfg=166
-hi cInclude                  guifg=#49515c ctermfg=239
-hi cIncluded                 guifg=#637285 ctermfg=60
+hi OperatorComparison        guifg=#d75f00 ctermfg=166
+hi cInclude                  guifg=#4e4e4e ctermfg=239
+hi cIncluded                 guifg=#5f5f87 ctermfg=60
 hi Member                  guifg=#ffffaf ctermfg=229
 
 " Syntastic
