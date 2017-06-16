@@ -75,6 +75,7 @@ autocmd! FileType c,cpp,java,php call CSyntaxAfter()
 
 
 hi Normal                    guifg=#262626 guibg=#ffffff ctermfg=235 ctermbg=231
+hi VertSplit                 guifg=#444444 guibg=#ffffff gui=NONE ctermfg=238 ctermbg=231 cterm=NONE
 hi Search                    guifg=#000000 guibg=#c6c6c6 ctermfg=0 ctermbg=251 cterm=NONE
 hi Visual                    guibg=#ffdf87 ctermbg=222
 hi LineNr                    guifg=#666666 ctermfg=242
@@ -83,7 +84,6 @@ hi CursorLine                guibg=#ffffdf gui=NONE ctermbg=230 cterm=NONE
 hi CursorLineNr              guifg=#080808 gui=NONE ctermfg=232 cterm=NONE
 hi ColorColumn               guibg=#1c1c1c ctermbg=234
 hi! link CursorColumn ColorColumn
-hi VertSplit                 guifg=#444444 guibg=#bcbcbc gui=NONE ctermfg=238 ctermbg=250 cterm=NONE
 hi SignColumn                guifg=#FFFFFF guibg=NONE ctermfg=15 ctermbg=NONE
 
 " StatusLine

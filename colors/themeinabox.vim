@@ -73,7 +73,8 @@ endfunction
 autocmd! FileType c,cpp,java,php call CSyntaxAfter()
 
 
-hi Normal                    guifg=#e6e0db guibg=#121212 ctermfg=188 ctermbg=235
+hi Normal                    guifg=#dfdfdf guibg=#262626 ctermfg=188 ctermbg=235
+hi VertSplit                 guifg=#444444 guibg=#262626 gui=NONE ctermfg=238 ctermbg=235 cterm=NONE
 hi Search                    guifg=#000000 guibg=#5f5f87 ctermfg=0 ctermbg=60 cterm=NONE
 hi Visual                    guibg=#5f5f87 ctermbg=60
 hi LineNr                    guifg=#666666 ctermfg=242
@@ -82,7 +83,6 @@ hi CursorLine                guibg=#323232 gui=NONE ctermbg=236 cterm=NONE
 hi CursorLineNr              guifg=#666666 gui=NONE ctermfg=253 cterm=NONE
 hi ColorColumn               guibg=#1c1c1c ctermbg=234
 hi! link CursorColumn ColorColumn
-hi VertSplit                 guifg=#444444 guibg=#121212 gui=NONE ctermfg=238 ctermbg=235 cterm=NONE
 hi SignColumn                guifg=#FFFFFF guibg=NONE ctermfg=15 ctermbg=NONE
 
 " StatusLine
@@ -105,7 +105,7 @@ hi StatusLineNC              guifg=#585858 guibg=#303030 gui=NONE ctermfg=240 ct
 " Folds
 " -----
 " line used for closed folds
-hi Folded                    guifg=#af87d7 guibg=#262626 gui=NONE ctermfg=140 ctermbg=235 cterm=NONE
+hi Folded                    guifg=#af87d7 guibg=NONE gui=NONE ctermfg=140 ctermbg=NONE cterm=NONE
 hi! link FoldColumn SignColumn
 
 " Invisible Characters
