@@ -4,16 +4,15 @@ syntax keyword Statement stdout new this delete or and xor override final
 syntax keyword Type String
 syntax keyword _OperatorComparison not
 
-syntax match _Block "[{}]"
-syntax match _Bracket "[\[\]]"
-syntax match _OperatorComparison "[<>=!]"
-syntax match _Operator "[-+&|=\/~.,;:*%&^?]"
-syntax match _Operator "->"
-syntax match _OperatorComparison "not"
-syntax match _OperatorComparison "!=" containedin=javaParenT
-syntax match _OperatorComparison "==" containedin=javaParenT
-syntax match _OperatorComparison "<=" containedin=javaParenT
-syntax match _OperatorComparison ">=" containedin=javaParenT
+syntax match _Block "[{}]" containedin=javaParenT,javaParenT1,javaParenT2,javaParenT3
+syntax match _Bracket "[\[\]]" containedin=javaParenT,javaParenT1,javaParenT2,javaParenT3
+syntax match _OperatorComparison "[<>=!]" containedin=javaParenT,javaParenT1,javaParenT2,javaParenT3
+syntax match _Operator "[-+&|=\/~.,;:*%&^?]" containedin=javaParenT,javaParenT1,javaParenT2,javaParenT3
+syntax match _OperatorComparison "not" containedin=javaParenT,javaParenT1,javaParenT2,javaParenT3
+syntax match _OperatorComparison "!=" containedin=javaParenT,javaParenT1,javaParenT2,javaParenT3
+syntax match _OperatorComparison "==" containedin=javaParenT,javaParenT1,javaParenT2,javaParenT3
+syntax match _OperatorComparison "<=" containedin=javaParenT,javaParenT1,javaParenT2,javaParenT3
+syntax match _OperatorComparison ">=" containedin=javaParenT,javaParenT1,javaParenT2,javaParenT3
 syntax match _Todo "\<\(todo\|TODO\|FIX\|FIXME\)\>" contained
 syntax match _Note "\<NOTE\|QUESTION\|OPEN\>" contained
 syntax match _Doc "@\<\(param\s*\S*\|return\|author\|version\|since\|throws\|exception\)\>" contained

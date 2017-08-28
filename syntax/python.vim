@@ -11,6 +11,8 @@ syntax match _FunctionName "[a-zA-Z_][a-zA-Z0-9_]*[ ]*(" contains=_OpenParen
 syntax match _OpenParen "(" contained
 hi link _FunctionName Identifier
 hi link _OpenParen Normal
+hi link PythonFunction Directory
+" syntax keyword Directory def
 
 syntax keyword _OperatorComparison not
 syntax keyword Boolean True False None
