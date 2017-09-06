@@ -44,5 +44,6 @@ hi! link _Todo Todo
 hi! link _Member Member
 hi! link _Note String
 hi! link _Doc cIncluded
+
 " hi! link _Comment_bold VimwikiBold
 
