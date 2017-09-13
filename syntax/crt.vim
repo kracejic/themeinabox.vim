@@ -1,10 +1,11 @@
 
 syntax keyword Statement Certificate
-syntax keyword Special Data Signature Algorithm Issuer Digital Public key Subject Validity Version Serial Number Modulus Netscape Comment Cert Type Extended Key Usage extensions
+syntax keyword Special Data Signature Algorithm Issuer Digital Public key Subject Validity Version Serial Number Modulus Netscape Comment Cert Type Extended Key Usage extensions Authority Alternative Identifier
 
 syntax match Special "\<X[0-9]\+v*[0-9]*\>"
 
-syntax match Comment "^\s*\<[0-9a-f][0-9a-f]:[0-9a-f][0-9a-f]:[0-9a-f:]*"
+syntax match Comment "^\s*\<[0-9a-fA-F][0-9a-fA-F]:[0-9a-fA-F][0-9a-fA-F]:[0-9a-fA-F:]*"
+syntax match Comment "^\s*\<keyid:[0-9a-fA-F][0-9a-fA-F]:[0-9a-fA-F][0-9a-fA-F]:[0-9a-fA-F:]*"
 
 syntax match Todo "\<C=[^,^/]*\>" contains=_value
 syntax match Todo "\<CA=[^,^/]*\>" contains=_value
