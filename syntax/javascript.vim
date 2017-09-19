@@ -1,0 +1,3 @@
+
+
+hi! link jsFuncCall cParen
