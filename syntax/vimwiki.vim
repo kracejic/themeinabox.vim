@@ -7,7 +7,10 @@ syntax match _task_view6 "^======.*======$" contains=_task_view_filter,_task_vie
 syntax match _task_view_filter "|[^=]*" contained
 syntax match _task_view_char "=" contained
 
-syntax match Member "{[ .oO]}"
+syntax match Comment "{ }"
+syntax match Member "{[.]}"
+syntax match Type "{o}"
+syntax match Preproc "{O}"
 syntax match Special "{[xX]}"
 syntax match Operator "{[cC]}"
 syntax match Folded "{[?]}"
