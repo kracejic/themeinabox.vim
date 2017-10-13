@@ -20,6 +20,9 @@ syntax match Operator "NO" containedin=VimwikiTableRow
 syntax match Comment "-" containedin=VimwikiTableRow
 syntax match Comment "N/A" containedin=VimwikiTableRow
 
+syntax match String "QUESTION"
+syntax match Todo "TODO"
+
 hi! link _task_view1 VimwikiHeader1
 hi! link _task_view2 VimwikiHeader2
 hi! link _task_view3 VimwikiHeader3

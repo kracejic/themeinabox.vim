@@ -21,7 +21,7 @@ syntax match Keyword "\<emailAddress=[^,^/]*\>" contains=_value
 syntax match _equal "=" contained
 syntax match _value "=[^,^/]*\>" contained contains=_equal
 
-syntax region _comment start="-\+BEGIN CERTIFICATE-----\+" end="-\+END CERTIFICATE-\+$"
+syntax region _comment matchgroup=String start="-\+BEGIN CERTIFICATE-----\+" end="-\+END CERTIFICATE-\+$"
 
 hi! link _value Type
 hi! link _comment Comment
