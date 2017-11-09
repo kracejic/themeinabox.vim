@@ -15,10 +15,10 @@ syntax match Special "{[xX]}"
 syntax match Operator "{[cC]}"
 syntax match Folded "{[?]}"
 
-syntax match Special "YES" containedin=VimwikiTableRow
-syntax match Operator "NO" containedin=VimwikiTableRow
+syntax match Special "\<YES\>" containedin=VimwikiTableRow
+syntax match Operator "\<NO\>" containedin=VimwikiTableRow
 syntax match Comment "-" containedin=VimwikiTableRow
-syntax match Comment "N/A" containedin=VimwikiTableRow
+syntax match Comment "\<N/A\>" containedin=VimwikiTableRow
 
 syntax match String "QUESTION"
 syntax match Todo "TODO"

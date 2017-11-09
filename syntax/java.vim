@@ -29,6 +29,8 @@ syn match  cUserLabel  "\I\i*" contained
 syn match _Default "default"
 syn match _Member "\<[a-z][A-Z][a-z_A-Z0-9]*\>"
 syn match _Member "\<[a-z]_[a-z_A-Z0-9]*\>"
+syn match _Member "\<[a-z][A-Z][a-z_A-Z0-9]*\>" containedin=javaParenT,javaParenT1,javaParenT2,javaParenT3
+syn match _Member "\<[a-z]_[a-z_A-Z0-9]*\>" containedin=javaParenT,javaParenT1,javaParenT2,javaParenT3
 
 syntax match _FunctionName "[a-zA-Z_][a-zA-Z_0-9]*[ ]*(" contains=_OpenParen
 syntax match _OpenParen "(" contained

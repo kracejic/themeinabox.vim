@@ -10,7 +10,7 @@ syntax match _Bracket "[\[\]]"
 syntax match _OperatorComparison "[<>=!]"
 syntax match _Operator "[-+&|=\/~.,;:*%&^?]"
 syntax match _Operator "->"
-syntax match _OperatorComparison "not"
+syntax keyword _OperatorComparison not
 syntax match _OperatorComparison "!="
 syntax match _OperatorComparison "=="
 syntax match _OperatorComparison "<="
@@ -30,10 +30,10 @@ syntax region _CommentDox matchgroup=_DocStar start="\/\*\*" end="\*\/" contains
 syntax match _Comment "\/\/.*$"  contains=_Todo,_Note,_Doc
 syntax match _Define "#define"
 syntax match _DefineArg "#define\s*\S*" contains=_Define
-syn match  cUserCont   "^\s*\I\i*\s*:$" contains=cUserLabel,_Default
-syn match cUserCont   ";\s*\I\i*\s*:$" contains=cUserLabel,_Default
-syn match  cUserCont   "^\s*\I\i*\s*:[^:]" contains=cUserLabel,_Default
-syn match cUserCont   ";\s*\I\i*\s*:[^:]" contains=cUserLabel,_Default
+syn match  cUserCont   "^\s*\I\i*:$" contains=cUserLabel,_Default
+syn match cUserCont   ";\s*\I\i*:$" contains=cUserLabel,_Default
+syn match  cUserCont   "^\s*\I\i*:[^:]" contains=cUserLabel,_Default
+syn match cUserCont   ";\s*\I\i*:[^:]" contains=cUserLabel,_Default
 syn match  cUserLabel  "\I\i*" contained
 syn match _Default "default"
 syn match _Member "\<[a-z][A-Z][a-z_A-Z0-9]*\>"
