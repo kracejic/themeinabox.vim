@@ -54,6 +54,7 @@ hi! link _Member Member
 hi! link _Note String
 hi! link _Doc cIncluded
 hi! link _DocStar cIncluded
+hi! link cOctalZero Number
 
 " hi! link _Comment_bold VimwikiBold
 
