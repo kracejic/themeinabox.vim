@@ -1,6 +1,7 @@
 
 syntax keyword Boolean true false NULL TRUE FALSE nullptr
-syntax keyword Statement namespace stderr stdin stdout new this delete default or and xor override final
+syntax keyword Statement namespace stderr stdin stdout new this delete default override final
+syntax keyword _OperatorComparison or and xor
 syntax keyword Type Int8u Int8s Int16u Int16s Int32u Int32s Int64u Int64s
 
 syntax keyword _OperatorComparison not
