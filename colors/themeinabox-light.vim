@@ -91,6 +91,10 @@ hi PreProc                   guifg=#ff8700 ctermfg=208
 hi Special                   guifg=#afd75f ctermfg=149
 hi cParen                   guifg=#afd75f ctermfg=149
 
+hi green                   guifg=#5fd700 ctermfg=76
+hi red                     guifg=#d75f00 ctermfg=166
+hi warn                    guifg=#d75faf ctermfg=169
+
 " C++
 " ---
 

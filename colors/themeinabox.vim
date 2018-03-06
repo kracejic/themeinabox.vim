@@ -79,7 +79,7 @@ hi Constant                  guifg=#d75faf ctermfg=169
 hi Error                     guifg=#990000 guibg=NONE ctermfg=88 ctermbg=NONE
 hi WarningMsg                guifg=#800000 guibg=NONE ctermfg=1 ctermbg=NONE
 hi ErrorMsg                  guifg=#800000 guibg=NONE ctermfg=1 ctermbg=NONE
-hi Identifier                guifg=#a6e043 gui=NONE ctermfg=149 cterm=NONE
+hi Identifier                guifg=#afd75f gui=NONE ctermfg=149 cterm=NONE
 hi Keyword                   guifg=#e09146 gui=NONE ctermfg=173 cterm=NONE
 hi Number                    guifg=#78add2 ctermfg=110
 hi Statement                 guifg=#e09146 gui=NONE ctermfg=173 cterm=NONE
@@ -90,6 +90,10 @@ hi Type                      guifg=#e0a743 gui=NONE ctermfg=179 cterm=NONE
 hi PreProc                   guifg=#ff8700 ctermfg=208
 hi Special                   guifg=#afd75f ctermfg=149
 hi cParen                   guifg=#afd75f ctermfg=149
+
+hi green                   guifg=#5fd700 ctermfg=76
+hi red                     guifg=#d75f00 ctermfg=166
+hi warn                    guifg=#d75faf ctermfg=169
 
 " C++
 " ---
