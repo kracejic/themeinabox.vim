@@ -41,6 +41,8 @@ syn match _Member "\<[a-z][A-Z][a-z_A-Z0-9]*\>"
 syn match _Member "\<[a-z]_[a-z_A-Z0-9]*\>"
 syn match Normal "[.]\<[a-z]_[a-z_A-Z0-9]*\>" contains=_Operator
 
+syntax keyword OperatorComparison return goto
+
 hi _Block guifg=yellow1 guibg=NONE gui=none
 hi link _Bracket Constant
 hi link _Operator Operator

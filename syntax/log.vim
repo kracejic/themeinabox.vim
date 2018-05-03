@@ -4,10 +4,13 @@ syntax match _LogModule "\<[a-zA-Z_0-9.]\+\>" contained
 syntax match _LogModule2 "[a-zA-Z_0-9-[.\]]\+:" contained contains=_LogColumn
 syntax match _Time "\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d,\d*" contained
 syntax match _Time "[A-Z][a-z][a-z] \d* \d\d:\d\d:\d\d" contained
+syntax match _Time "\d\d:\d\d:\d\d" contained
 syntax match _LogFunction "\[[^]]*\]" contained
 syntax match _LogColumn ":" contained
 
 syntax match _LogHead "^\d.*  - " contains=_LogModule,_LogFunction,_InfoLevel,_Time,_LogError
+
+syntax match _LogHead "^\[[ ]*[0-9.]*\ " contains=_LogModule,_LogFunction,_InfoLevel,_Time,_LogError
 
 " syntax match _File "[a-zA-Z0-9.-_/]*:\d\+"
 syntax keyword _InfoLevel INFO DEBUG
@@ -22,6 +25,8 @@ syntax match _LogError "\<[a-zA-Z0-9_.]*[eE]xception"
 
 " Journalctl
 syntax match _LogHead "^[A-Z][a-z][a-z] \d* [0-9:]*[^:]*:" contains=_Time,_LogModule2
+" Journalctl small
+syntax match _LogHead "^[0-9:]* [^:]*:" contains=_Time,_LogModule2
 
 
 hi! link _LogHead cIncluded
