@@ -27,6 +27,8 @@ syntax match _LogError "\<[a-zA-Z0-9_.]*[eE]xception"
 syntax match _LogHead "^[A-Z][a-z][a-z] \d* [0-9:]*[^:]*:" contains=_Time,_LogModule2
 " Journalctl small
 syntax match _LogHead "^[0-9:]* [^:]*:" contains=_Time,_LogModule2
+" Journalctl
+syntax match _LogHead "^[0-9.]\+ [0-9:]\+" contains=_Time,_LogModule2
 
 
 hi! link _LogHead cIncluded
