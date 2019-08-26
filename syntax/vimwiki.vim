@@ -16,11 +16,16 @@ syntax match Operator "{[cC]}"
 syntax match Folded "{[?]}"
 
 syntax match Special "\<YES\>" containedin=VimwikiTableRow
+syntax match Special "\<DONE\>" containedin=VimwikiTableRow
 syntax match Operator "\<NO\>" containedin=VimwikiTableRow
+syntax match Operator "\<NOT\>" containedin=VimwikiTableRow
+syntax match Operator "\<NOPE\>" containedin=VimwikiTableRow
 syntax match Comment "-" containedin=VimwikiTableRow
 syntax match Comment "\<N/A\>" containedin=VimwikiTableRow
 
 syntax match String "QUESTION"
+syntax match Comment "NOTE"
+syntax match Comment "MAYBE"
 syntax match Todo "TODO"
 
 hi! link _task_view1 VimwikiHeader1
@@ -29,6 +34,8 @@ hi! link _task_view3 VimwikiHeader3
 hi! link _task_view4 VimwikiHeader4
 hi! link _task_view5 VimwikiHeader5
 hi! link _task_view6 VimwikiHeader6
+
+syntax match Operator "{.*}" containedin=VimwikiHeader1,VimwikiHeader2,VimwikiHeader3,VimwikiHeader4,VimwikiHeader5,VimwikiHeader6
 
 hi! link _task_view_filter Comment
 hi! link _task_view_char VimwikiHeaderChar
