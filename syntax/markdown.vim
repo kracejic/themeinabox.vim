@@ -1,3 +1,4 @@
+syntax match cIncluded '@ifinline_devel\|@if_devel\|@endif_devel\|@ifinline_etsi\|@if_etsi\|@endif_etsi\|@ifinline_wave\|@if_wave\|@endif_wave' containedin=mkdNonListItemBlock contains=NONE
 
 syntax match String "\\\S*" containedin=mkdNonListItemBlock
 
