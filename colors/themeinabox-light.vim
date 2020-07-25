@@ -14,6 +14,8 @@ let g:colors_name = "themeinabox-light"
 
 " autocmd! FileType c,cpp,java,php call CSyntaxAfter()
 
+let g:indentLine_bgcolor_term = 231
+:let g:indentLine_color_term = 250
 
 hi Normal                    guifg=#262626 guibg=#ffffff ctermfg=235 ctermbg=231
 hi VertSplit                 guifg=#444444 guibg=#ffffff gui=NONE ctermfg=238 ctermbg=231 cterm=NONE
