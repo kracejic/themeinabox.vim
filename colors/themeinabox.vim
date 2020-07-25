@@ -74,7 +74,7 @@ hi PMenuThumb                guifg=#ffffff guibg=#a8a8a8 gui=NONE ctermfg=15 cte
 " Code constructs
 " ---------------
 hi Comment                   guifg=#7d7d7d ctermfg=244
-hi Todo                      guifg=#df5f5f guibg=NONE gui=bold ctermfg=167 ctermbg=NONE cterm=bold
+hi Todo                      guifg=#df5f5f guibg=NONE gui=NONE ctermfg=167 ctermbg=NONE cterm=NONE
 hi Constant                  guifg=#d75faf ctermfg=169
 hi Error                     guifg=#990000 guibg=NONE ctermfg=88 ctermbg=NONE
 hi WarningMsg                guifg=#800000 guibg=NONE ctermfg=1 ctermbg=NONE
@@ -90,6 +90,9 @@ hi Type                      guifg=#e0a743 gui=NONE ctermfg=179 cterm=NONE
 hi PreProc                   guifg=#ff8700 ctermfg=208
 hi Special                   guifg=#afd75f ctermfg=149
 hi cParen                   guifg=#afd75f ctermfg=149
+
+hi LspWarningText ctermfg=95
+hi LspErrorText ctermfg=167
 
 hi green                   guifg=#5fd700 ctermfg=76
 hi red                     guifg=#d75f00 ctermfg=166
