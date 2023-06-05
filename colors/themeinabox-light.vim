@@ -232,3 +232,10 @@ highlight lspReference cterm=underline
 highlight GitGutterAdd    guifg=#009900 ctermfg=2
 highlight GitGutterChange guifg=#bbbb00 ctermfg=3
 highlight GitGutterDelete guifg=#ff2222 ctermfg=1
+
+hi! MergeLocal ctermbg=65
+hi! MergeLocalHEAD ctermbg=71
+hi! MergeBase ctermbg=237
+hi! MergeBaseHEAD ctermbg=239
+hi! MergeRemote ctermbg=60
+hi! MergeRemoteHEAD ctermbg=62
