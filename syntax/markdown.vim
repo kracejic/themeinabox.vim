@@ -1,4 +1,8 @@
-syntax match cIncluded '@ifinline_devel\|@if_devel\|@endif_devel\|@ifinline_etsi\|@if_etsi\|@endif_etsi\|@ifinline_wave\|@if_wave\|@endif_wave' containedin=mkdNonListItemBlock contains=NONE
+syntax match cIncluded '@ifinline_\w\+\|@if_\w\+\|@endif_\w\+\|@endif\|@else\|@import' containedin=mkdNonListItemBlock contains=NONE
+
+syntax match cIncluded '@comment' containedin=Comment contains=NONE
+syntax match Comment '@comment.*' containedin=mkdNonListItemBlock contains=cIncluded
+
 
 syntax match String "\\\S*" containedin=mkdNonListItemBlock
 
@@ -30,3 +34,5 @@ syntax region _greenColor start="@g " end="_"
 hi! link _greenColor Special
 syntax region _redColor start="@r " end="_"
 hi! link _redColor Todo
+
+hi! link mkdHeading Comment
