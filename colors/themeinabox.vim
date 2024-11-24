@@ -19,6 +19,7 @@ let g:indentLine_bgcolor_term = 235
 
 hi Normal                    guifg=#dfdfdf guibg=#262626 ctermfg=188 ctermbg=235
 hi VertSplit                 guifg=#444444 guibg=#262626 gui=NONE ctermfg=238 ctermbg=235 cterm=NONE
+hi WinSeparator              guifg=#444444 guibg=NONE gui=NONE ctermfg=238 ctermbg=NONE cterm=NONE 
 hi Search                    guifg=#000000 guibg=#5f5f87 ctermfg=0 ctermbg=60 cterm=NONE
 hi Visual                    guibg=#5f5f87 ctermbg=60
 hi LineNr                    guifg=#666666 ctermfg=242
@@ -61,6 +62,7 @@ hi SpecialKey                guifg=#767676 gui=NONE cterm=NONE ctermfg=243
 " ----
 " directory names and other special names in listings
 hi Directory                 guifg=#87af5f gui=NONE ctermfg=107 cterm=NONE
+hi! link Function Identifier
 
 " Popup Menu
 " ----------

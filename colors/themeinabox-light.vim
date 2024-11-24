@@ -19,6 +19,7 @@ let g:indentLine_bgcolor_term = 231
 
 hi Normal                    guifg=#262626 guibg=#ffffff ctermfg=235 ctermbg=231
 hi VertSplit                 guifg=#444444 guibg=#ffffff gui=NONE ctermfg=238 ctermbg=231 cterm=NONE
+hi WinSeparator              guifg=#444444 guibg=NONE gui=NONE ctermfg=238 ctermbg=NONE cterm=NONE 
 hi Search                    guifg=#000000 guibg=#c6c6c6 ctermfg=0 ctermbg=251 cterm=NONE
 hi Visual                    guibg=#ffdf87 ctermbg=222
 hi LineNr                    guifg=#666666 ctermfg=242

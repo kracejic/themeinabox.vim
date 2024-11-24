@@ -43,7 +43,7 @@ syn match Normal "[.]\<[a-z]_[a-z_A-Z0-9]*\>" contains=_Operator
 
 syntax keyword OperatorComparison return goto
 
-hi _Block guifg=yellow1 guibg=NONE gui=none
+hi _Block guifg=white guibg=NONE gui=none
 hi link _Bracket Constant
 hi link _Operator Operator
 hi link _OperatorComparison OperatorComparison

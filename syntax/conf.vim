@@ -17,4 +17,4 @@ syntax match Member "^\[.*\]"
 
 syntax match Constant "[\[\]{},]"
 
-hi! link _path Type
+" hi! link _path Type
