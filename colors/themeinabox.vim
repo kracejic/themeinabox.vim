@@ -63,6 +63,7 @@ hi SpecialKey                guifg=#767676 gui=NONE cterm=NONE ctermfg=243
 " directory names and other special names in listings
 hi Directory                 guifg=#87af5f gui=NONE ctermfg=107 cterm=NONE
 hi! link Function Identifier
+hi! link NERDTreeFlags Comment
 
 " Popup Menu
 " ----------
