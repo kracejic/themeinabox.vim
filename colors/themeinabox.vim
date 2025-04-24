@@ -116,6 +116,7 @@ hi! link cUserLabel cIncluded
 hi Operator                  guifg=#e88958 ctermfg=173
 hi OperatorComparison        guifg=#d75f00 ctermfg=166
 hi cInclude                  guifg=#4e4e4e ctermfg=239
+hi NormalGrey                guifg=#949494 ctermfg=88
 hi cIncluded                 guifg=#5f5f87 ctermfg=60
 hi Member                  guifg=#ffffaf ctermfg=229
 
@@ -153,7 +154,7 @@ hi VimwikiHeader3 guifg=#af5f00 gui=bold ctermfg=130 cterm=bold
 hi VimwikiHeader4 guifg=#875f00 gui=bold ctermfg=94 cterm=bold
 hi VimwikiHeader5 guifg=#875f00 gui=NONE ctermfg=94 cterm=NONE
 hi VimwikiHeader6 guifg=#870000 gui=NONE ctermfg=58 cterm=NONE
-hi VimwikiBold guifg=#ffffff ctermfg=231 cterm=bold
+hi VimwikiBold guifg=#ffffff ctermfg=231 cterm=bold gui=bold
 hi VimWikiCode guifg=#d787d7 ctermfg=176
 hi VimWikiPre guifg=#dfafdf ctermfg=182
 hi VimwikiCellSeparator guifg=#5f5f5f ctermfg=59
