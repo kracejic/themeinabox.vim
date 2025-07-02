@@ -155,6 +155,7 @@ hi VimwikiHeader4 guifg=#875f00 gui=bold ctermfg=94 cterm=bold
 hi VimwikiHeader5 guifg=#875f00 gui=NONE ctermfg=94 cterm=NONE
 hi VimwikiHeader6 guifg=#870000 gui=NONE ctermfg=58 cterm=NONE
 hi VimwikiBold guifg=#ffffff ctermfg=231 cterm=bold gui=bold
+hi VimwikiItalic guifg=#ffffff term=italic cterm=italic gui=italic
 hi VimWikiCode guifg=#d787d7 ctermfg=176
 hi VimWikiPre guifg=#dfafdf ctermfg=182
 hi VimwikiCellSeparator guifg=#5f5f5f ctermfg=59
@@ -167,7 +168,7 @@ hi! link htmlH2 VimwikiHeader2
 hi! link htmlH3 VimwikiHeader3
 hi! link htmlH4 VimwikiHeader4
 hi! link htmlH5 VimwikiHeader5
-hi! link htmlItalic VimwikiBold
+hi! link htmlItalic VimwikiItalic
 hi! link mkdCode VimwikiCode
 
 " Diffs

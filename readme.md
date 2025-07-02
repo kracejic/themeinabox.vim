@@ -8,5 +8,3 @@ On the left: c++ code with [octol/vim-cpp-enhanced-highlight](https://github.com
 
 It is tested only in terminal and needs 256 colors.
 
-
-
