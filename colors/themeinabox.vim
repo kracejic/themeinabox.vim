@@ -22,6 +22,7 @@ hi VertSplit                 guifg=#444444 guibg=#262626 gui=NONE ctermfg=238 ct
 hi WinSeparator              guifg=#444444 guibg=NONE gui=NONE ctermfg=238 ctermbg=NONE cterm=NONE 
 hi Search                    guifg=#000000 guibg=#5f5f87 ctermfg=0 ctermbg=60 cterm=NONE
 hi Visual                    guibg=#5f5f87 ctermbg=60
+hi mkdLineBreak              guibg=NONE ctermbg=NONE
 hi LineNr                    guifg=#666666 ctermfg=242
 hi Cursor                    guifg=#000000 guibg=#FFFFFF ctermfg=0 ctermbg=15
 hi CursorLine                guibg=#323232 gui=NONE ctermbg=236 cterm=NONE
