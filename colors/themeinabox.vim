@@ -31,6 +31,9 @@ hi ColorColumn               guibg=#1c1c1c ctermbg=234
 hi! link CursorColumn ColorColumn
 hi SignColumn                guifg=#FFFFFF guibg=NONE ctermfg=15 ctermbg=NONE
 
+hi NormalFloat guibg=#262626 ctermbg=235
+hi FloatBorder guifg=#666666 guibg=#262626 ctermfg=253 ctermbg=235
+
 " StatusLine
 " Bold
 hi User1                     guifg=#eeeeee guibg=#606060 gui=bold ctermfg=255 ctermbg=241 cterm=bold
