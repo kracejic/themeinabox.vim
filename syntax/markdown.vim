@@ -1,4 +1,4 @@
-syntax match cIncluded '@ifinline_\w\+\|@if_\w\+\|@endif_\w\+\|@endif\|@else\|@import' containedin=mkdNonListItemBlock contains=NONE
+syntax match cIncluded '@ifline_\w\+\|@ifinline_\w\+\|@if_\w\+\|@endif_\w\+\|@endif\|@else\|@import' containedin=mkdNonListItemBlock contains=NONE
 
 syntax match cIncluded '@comment' containedin=Comment contains=NONE
 syntax match Comment '@comment.*' containedin=mkdNonListItemBlock contains=cIncluded
@@ -19,14 +19,6 @@ syntax match String "QUESTION" containedin=mkdListItemLine
 syntax match Comment "NOTE" containedin=mkdListItemLine
 syntax match Comment "MAYBE" containedin=mkdListItemLine
 syntax match Todo "TODO" containedin=mkdListItemLine
-syntax match String "QUESTION" containedin=mkdNonListItemBlock
-syntax match Comment "NOTE" containedin=mkdNonListItemBlock
-syntax match Comment "MAYBE" containedin=mkdNonListItemBlock
-syntax match Todo "TODO" containedin=mkdNonListItemBlock
-syntax match String "QUESTION" containedin=mkdBlockquote
-syntax match Comment "NOTE" containedin=mkdBlockquote
-syntax match Comment "MAYBE" containedin=mkdBlockquote
-syntax match Todo "TODO" containedin=mkdBlockquote
 
 syntax region _blueColor start="@b " end="_"
 hi! link _blueColor String
